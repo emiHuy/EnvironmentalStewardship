@@ -36,6 +36,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <background color="-4865602"/>
                   <enabled value="true"/>
                   <font size="32"/>
                   <foreground color="-14474461"/>

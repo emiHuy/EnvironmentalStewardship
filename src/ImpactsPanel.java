@@ -43,7 +43,7 @@ public class ImpactsPanel extends JPanel{
         StyledDocument styledDocument = generalText.getStyledDocument();
         styledDocument.setParagraphAttributes(0, styledDocument.getLength(), center, false);
         generalText.setBorder(new EmptyBorder(0,0,50,0));
-        generalText.setText("Technology has grown and advanced over the years, becoming much more prominent in today's society. As it is, technology presents beneficial and negative impacts on the environment and human health.");
+        generalText.setText("Over the years, technology has become increasingly significant to our society. As technology serves a variety of uses, it positively and negatively impacts the environment and human health.");
         tabbedPane.setBorder(new EmptyBorder(0 ,0 ,0 ,0));
 
         setupHealthImpacts();
@@ -82,16 +82,17 @@ public class ImpactsPanel extends JPanel{
         generalUpdate(paneList, labelList);
         ePositiveImpactImage.setIcon(new ImageIcon("positive environmental impact image.jpg"));
         ePositiveImpactCaption.setText("Wind turbines and solar panels that generate electricity from wind energy and solar energy, respectively.");
-        ePositiveImpactText.setText("With technology, renewable resources could provide us with energy. These cleaner sources of energy help reduce greenhouse gas emissions and non-renewable fossil fuel dependence, a large factor in global warming.\n" +
-                "\nTechnology has also helped optimize waste management. In waste management, technology is used to automate sorting and waste separation systems. Sensors and tracking technologies are also used to monitor waste streams. With technology, safe, appropriate, and efficient waste management is ensured.\n" +
-                "\nIn addition to waste management, technology is also used to manage natural resources. By applying AI and machine learning to minimize pesticides and fertilizers, and tracking natural resources, technology optimizes consumption and long-term sustainability of resources.");
-        eNegativeImpactText.setText("With newer technologies being released often, older technologies are being discarded. 50 million tons of e-waste is generated globally each year - most of which end up in landfills or are burned. Technotrash - unwanted and broken electronic devices - is the most rapidly growing waste type. With this non-biodegradable technotrash, technology’s toxic materials (ie. lead, mercury, and arsenic) leak into the ground, contaminating the water, plants, and animals. \n" +
-                "\nAnimal and plant habitats and ecosystems are disrupted, as lands are cleared to build manufacturing factories that make the technology we use. Plus, material collection for manufacturing causes deforestation and resource degradation. This greatly affects the environment’s natural cycles.\n" +
-                "\nServers and data banks that many technologies require to operate consume  a lot of energy. Energy used today mostly comes from non-renewable sources, contributing to greenhouse gas emissions.");
+        ePositiveImpactText.setText("With the help of technology, clean and renewable energy sources such as the wind and sun could be harnessed to provide our energy needs, reducing greenhouse gas emissions and dependence on fossil fuels, a cause of global warming. \n" +
+                "\nAdditionally, technology has helped optimize waste management by automating waste sorting and separation systems. Sensors and trackers also monitor waste streams. Thus, technology ensures safe, appropriate, and efficient waste management.\n" +
+                "\nIn addition to managing waste, technology also helps manage natural resources. By applying AI and machine learning to minimize pesticides and fertilizers and track natural resources, technology optimizes consumption and the long-term sustainability of resources.\n");
+        eNegativeImpactText.setText("Although technology can positively impact the environment, it can also harm it.\n" +
+                "\nWith newer devices released often, older yet still functional devices are discarded. Technotrash or e-waste (unwanted and broken electronic products) is the most rapidly growing waste type. Electronic devices consist of non-biodegradable and toxic materials that can leak into the ground when improperly disposed of, contaminating water, plants, and animals. \n" +
+                "\nAdditionally, factories that produce electronics take up land space, release greenhouse gas emissions, and disrupt ecosystems. On top of factories, collecting the materials required to make devices further causes environmental harm, such as deforestation and resource degradation.\n" +
+                "\nIn addition to negative impacts in manufacturing, there are negative impacts that come with technology use. Servers and data banks that devices require for operation consume large amounts of energy. Energy today primarily comes from non-renewable sources that contribute to greenhouse gas emissions.");
         eNegativeImpactImage.setIcon(new ImageIcon("negative environmental impact image.jpg"));
         eNegativeImpactCaption.setText("E-Waste landfill filled with unwanted electronic devices.");
 
-        eConclusionText.setText("While technology makes our lives easier and helps us manage the environment around us and provide us energy for our daily activities, it comes at the cost of pollution, greenhouse gas emission,and the destruction of natural habitats.");
+        eConclusionText.setText("While technology makes our lives easier and sources our energy needs for daily activities, it comes at the cost of pollution, greenhouse gases, and environmental harm.");
     }
 
     private void setupHealthImpacts(){
@@ -103,9 +104,13 @@ public class ImpactsPanel extends JPanel{
         hNegativeImpactCaption.setText("Person addicted to screen - the blue light emitted from his device is disrupting his sleep.");
         hPositiveImpactImage.setIcon(new ImageIcon("positive health impact image.jpg"));
         hNegativeImpactImage.setIcon(new ImageIcon("negative health impact image.jpg"));
-        hPositiveImpactText.setText("Technological advancements have positively improved healthcare. Through technology, patients are able meet with healthcare professionals remotely and access test results. As such, transportation to offices are minimized, reducing greenhouse gases. Technology is used in hospitals and healthcare facilities to produce imaging of problem areas, to make diagnoses, and to monitor vital signs, improving healthcare accuracy and efficiency. Technology has even provided us a way to cure diseases.\n");
-        hNegativeImpactText.setText("Technology is widely used today by individuals of different ages. When technology is overused or used for a prolonged amount of time, individuals may experience physical inactivity and its related issues, Carpal Tunnel Syndrome, musculoskeletal issues, digital eye strain, disrupted sleep, and hearing issues.\n" +
-                "\nDue to the variety of apps, social media, games, and internet that technology provides are addicting and may negatively impact our daily lives. Technology has also provided an alternative to in-person communication, creating a reliance on virtual social interactions and increased anxiety in in-person interactions. Social media, cyber bullying, and information overload could also lead to anxiety, depression, and stress.");
-        hConclusionText.setText("The overuse of technology leads to numerous physical, mental, and social health issues.. However, technological developments have advanced healthcare, allowing doctors to make accurate diagnoses and treat patients as necessary.");
+        hPositiveImpactText.setText("Technological advancements have made huge impacts on healthcare. \n" +
+                "\nPatients can now meet with healthcare professionals and access test results remotely. As such, patients do not always need to travel to doctor’s offices and clinics, minimizing the amount of greenhouse gases produced.\n" +
+                "\nTechnology is used in healthcare facilities to produce images of the body, make diagnoses, and monitor vital signs, improving healthcare accuracy. Technology has helped develop vaccines, cure diseases, and potentially, in the future, cure genetic disorders. \n" +
+                "\nEven health applications can track illnesses, diets, exercises, mental health, and menstrual cycles, helping individuals manage their health needs.");
+        hNegativeImpactText.setText("Technology is widely used today by individuals of many different ages. Overuse of technology correlated to a variety of health issues that include and relate to musculoskeletal problems, digital eye strain, disrupted sleep, hearing issues, and physical inactivity.\n" +
+                "\nThe variety of apps that electronic devices provide, like social media and video game apps, were made to be addicting, causing unnecessary reliance on electronics.\n" +
+                "\nTechnology has also provided an alternative to in-person communication by making virtual and anonymous social interactions possible - everything is online. Therefore, with social media, cyberbullying, and the lack of in-person interactions, technology could lead to anxiety, depression, and stress for many individuals.");
+        hConclusionText.setText("While excessive use of technology leads to numerous physical, mental, and social health issues, technological developments have advanced healthcare, allowing doctors to make accurate diagnoses and treat patients more effectively.");
     }
 }
