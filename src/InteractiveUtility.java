@@ -12,7 +12,7 @@ public class InteractiveUtility {
                 "B. By automating waste sorting and separation systems",
                 "C. By encouraging e-waste production",
                 "D. By clearing land for waste processing factories",
-                "B. By automating sorting and waste separation systems");
+                "B. By automating waste sorting and separation systems");
 
         Question question2 = new Question("2. What is a significant negative environmental impact of technology related to its disposal?",
                 "A. Reduction in greenhouse gas emissions",
