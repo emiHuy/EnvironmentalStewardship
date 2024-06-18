@@ -6,7 +6,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class HomePanel extends JPanel implements ActionListener {
-    private MainScreen mainScreen;
+    private final MainScreen mainScreen;
+    private JPanel parentPanel;
     private JButton impactOfTechnologyButton;
     private JButton reducingNegativeImpactsButton;
     private JButton programsAndInitiativesButton;
@@ -14,45 +15,49 @@ public class HomePanel extends JPanel implements ActionListener {
     private JButton reduceImageButton;
     private JButton programImageButton;
     private JButton impactImageButton;
-    private JPanel aHomePanel;
-    private ImageIcon reduceImage = new ImageIcon("reduce negative impacts image.png");
-    private ImageIcon programImage = new ImageIcon("program initiatives image.png");
-    private ImageIcon impactImage = new ImageIcon("impact of technology image.png");
 
     public HomePanel(MainScreen mainScreen){
         this.mainScreen = mainScreen;
-        setLayout(new GridLayout());
-        setVisible(true);
-        add(aHomePanel);
-        setUpButtons();
+        setupComponents();
     }
 
-    private void setUpButtons(){
-        reduceImageButton.setIcon(reduceImage);
-        programImageButton.setIcon(programImage);
-        impactImageButton.setIcon(impactImage);
+    private void createImageButton(JButton button, String filename){
+        ImageIcon image = new ImageIcon(filename);
+        button.setIcon(image);
+        button.setBorder(new EmptyBorder(0,0,0,0));
+        button.addActionListener(this);
+    }
 
-        reduceImageButton.setBorder(new EmptyBorder(0,0,0,0));
-        programImageButton.setBorder(new EmptyBorder(0,0,0,0));
-        impactImageButton.setBorder(new EmptyBorder(0,0,0,0));
+    private void createButton(JButton button){
+        button.setBorder(new EmptyBorder(20,0,0,0));
+        button.addActionListener(this);
+    }
 
-        reducingNegativeImpactsButton.setBorder(new EmptyBorder(20,0,0,0));
-        programsAndInitiativesButton.setBorder(new EmptyBorder(20,0,0,0));
-        impactOfTechnologyButton.setBorder(new EmptyBorder(20,0,0,0));
+    private void setupComponents(){
+        // Setup panel
+        setLayout(new GridLayout());
+        setVisible(true);
+        add(parentPanel);
+
+        // Create image buttons
+        createImageButton(impactImageButton, "impact of technology image.png");
+        createImageButton(reduceImageButton, "reduce negative impacts image.png");
+        createImageButton(programImageButton, "program initiatives image.png");
+
+        // Create regular buttons
+        createButton(impactOfTechnologyButton);
+        createButton(reducingNegativeImpactsButton);
+        createButton(programsAndInitiativesButton);
+
+        // Create interactive button
         Border lineBorder = BorderFactory.createLineBorder(new Color(35,35,35), 2);
         interactiveButton.setBorder(lineBorder);
-
-        impactImageButton.addActionListener(this);
-        reduceImageButton.addActionListener(this);
-        programImageButton.addActionListener(this);
-        impactOfTechnologyButton.addActionListener(this);
-        reducingNegativeImpactsButton.addActionListener(this);
-        programsAndInitiativesButton.addActionListener(this);
         interactiveButton.addActionListener(this);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        // Go to corresponding screens (panels) when button is clicked
         if(e.getSource() == impactImageButton || e.getSource() == impactOfTechnologyButton){
             mainScreen.updatePanel(new ImpactsPanel(), "Impact of Technology");
         }

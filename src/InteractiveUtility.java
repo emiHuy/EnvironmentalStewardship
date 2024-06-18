@@ -1,3 +1,4 @@
+// Used to create and access interactive questions
 public class InteractiveUtility {
     private static Question[] questionList;
 

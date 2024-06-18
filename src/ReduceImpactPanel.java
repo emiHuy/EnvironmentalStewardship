@@ -4,19 +4,26 @@ import java.awt.*;
 
 public class ReduceImpactPanel extends JPanel {
     private JPanel parentPanel;
-    private JPanel generalPanel;
-    private JTabbedPane tabbedPane;
     private JTextPane healthText;
     private JTextPane environmentText;
     private JLabel header;
 
     public ReduceImpactPanel(){
+        setupComponents();
+        setTextInfo();
+    }
+    private void setupComponents(){
         setLayout(new GridLayout());
         add(parentPanel);
         setBackground(new Color(210,224,221));
+
         header.setBorder(new EmptyBorder(80,0,80,0));
         environmentText.setBorder(new EmptyBorder(20,0,20,0));
         healthText.setBorder(new EmptyBorder(20,0,20,0));
+    }
+
+    private void setTextInfo(){
+        // Reducing negative impacts on the environment information
         environmentText.setText("Technology largely contributes to pollution and carbon emissions. Each and every one of us can play our part in helping the environment.\n\n" +
                 "\t- To reduce the negative impacts of technology on the environment, we can:\n" +
                 "\t- Turn off lights and electronic devices when not in use\n" +
@@ -27,6 +34,8 @@ public class ReduceImpactPanel extends JPanel {
                 "\t- Use devices for their entire lifespan or for as long as possible\n" +
                 "\t- Recycle devices and dispose of them properly\n" +
                 "\t- Use renewable sources of energy (ie. solar panels).\n");
+
+        // Reducing negative impacts on human health information
         healthText.setText("Overuse of technology leads to a variety of health issues. To avoid complications, we can:\n" +
                 "\t- Get at least 150 minutes of moderate physical activity a week for physical activity\n" +
                 "\t- Take regular breaks away from the screen to move around\n" +

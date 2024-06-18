@@ -158,6 +158,7 @@ public class InteractivePanel extends JPanel implements ActionListener {
         section.add(results);
         tabbedPane.add(section, sectionTitle);
     }
+
     private void setupResultsSectionPanel(){
         resultsSection.setBackground(new Color(210, 224, 221));
 
@@ -178,19 +179,21 @@ public class InteractivePanel extends JPanel implements ActionListener {
         if(e.getSource() == goToSection2){
             valid = checkEachQuestionState(0, 3, impactsSection);
             if(valid){
+                // Display next section of interactive (reduceImpactSection)
                 updateVisibility(reduceImpactsSection);
             }
         }
         else if(e.getSource() == goToSection3){
             valid = checkEachQuestionState(4, 7, reduceImpactsSection);
             if(valid){
+                // Display next section of interactive (programsSection)
                 updateVisibility(programsSection);
-
             }
         }
         else if(e.getSource() == finishInteractive){
             valid = checkEachQuestionState(8, 11, programsSection);
             if(valid){
+                // Display next section of interactive (resultsSection)
                 updateVisibility(resultsSection);
                 setupResultsSectionPanel();
             }

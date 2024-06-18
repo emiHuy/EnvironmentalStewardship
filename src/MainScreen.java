@@ -4,7 +4,6 @@ import java.awt.*;
 public class MainScreen extends JFrame{
     private JPanel mainPanel;
     private MenuPanel menuPanel;
-    private JFrame window;
     private JPanel currentPanel;
 
     public MainScreen(){
@@ -13,7 +12,8 @@ public class MainScreen extends JFrame{
     }
 
     private void initializeFrame(){
-        window = new JFrame();
+        mainPanel = new JPanel();
+        JFrame window = new JFrame();
         window.setSize(1920, 1080);
         window.add(mainPanel);
         window.setContentPane(mainPanel);
@@ -35,6 +35,7 @@ public class MainScreen extends JFrame{
         menuPanel.updateButtonColor("Home");
     }
 
+    // Changes main panel screen to whichever screen user selects
     public void updatePanel(JPanel newPanel, String buttonText){
         mainPanel.remove(currentPanel);
         mainPanel.add(newPanel, BorderLayout.CENTER);
@@ -43,9 +44,4 @@ public class MainScreen extends JFrame{
         mainPanel.revalidate();
         currentPanel = newPanel;
     }
-
-    public JFrame getJFrame(){
-        return window;
-    }
-
 }

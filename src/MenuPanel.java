@@ -16,22 +16,27 @@ public class MenuPanel extends JPanel implements ActionListener {
 
     public MenuPanel(MainScreen mainScreen){
         this.mainScreen = mainScreen;
+        setupComponents();
+    }
+
+    private void setupButton(JButton button){
+        button.setBorder(new EmptyBorder(0,0,0,0));
+        button.addActionListener(this);
+    }
+
+    private void setupComponents(){
+        // Setup parent panel
         setLayout(new GridLayout());
         setVisible(true);
         add(buttonPanel);
-        Border menuPanelBorder = BorderFactory.createLineBorder(new Color(109, 158, 114), 15);
-        setBorder(menuPanelBorder);
-        homeButton.setBorder(new EmptyBorder(0,0,0,0));
-        impactOfTechnologyButton.setBorder(new EmptyBorder(0,0,0,0));
-        reducingImpactsButton.setBorder(new EmptyBorder(0,0,0,0));
-        programsAndInitiativesButton.setBorder(new EmptyBorder(0,0,0,0));
-        interactiveButton.setBorder(new EmptyBorder(0,0,0,0));
+        setBorder(BorderFactory.createLineBorder(new Color(109, 158, 114), 15));
 
-        homeButton.addActionListener(this);
-        impactOfTechnologyButton.addActionListener(this);
-        reducingImpactsButton.addActionListener(this);
-        programsAndInitiativesButton.addActionListener(this);
-        interactiveButton.addActionListener(this);
+        // Set up buttons
+        setupButton(homeButton);
+        setupButton(impactOfTechnologyButton);
+        setupButton(reducingImpactsButton);
+        setupButton(programsAndInitiativesButton);
+        setupButton(interactiveButton);
     }
 
     public void updateButtonColor(String buttonText){
@@ -50,6 +55,7 @@ public class MenuPanel extends JPanel implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        // Go to corresponding screens (panels) when button is clicked
         if(e.getSource() == homeButton){
             mainScreen.updatePanel(new HomePanel(mainScreen), "Home");
         }
