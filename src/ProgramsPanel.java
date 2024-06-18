@@ -82,7 +82,7 @@ public class ProgramsPanel extends JPanel {
                 "\n\nThe Paris Agreement: ",
                 "A legally binding international treaty on climate change that seeks to develop and transfer technology to reach goals of reducing greenhouse gas emissions and mitigating climate change.",
                 "\n\nThe City of Ottawa Better Homes - Loan Program: ",
-                "Homes and buildings produce almost half of greenhouse gas emissions in Ottawa. With EnviroCentre as its partners, the City of Ottawa has a program that offers to homeowners, favourable, low-interest loans to cover the cost of home energy improvements (ie. insulation, windows, doors, heating and cooling systems, and solar panels). With financing, they promote energy efficient homes in hopes to reduce greenhouse gas emissions.",
+                "Homes and buildings produce almost half of greenhouse gas emissions in Ottawa. With EnviroCentre as its partners, the City of Ottawa has a program that offers to homeowners, favourable, low-interest loans to cover the cost of home energy improvements (ie. insulation, windows, doors, heating and cooling systems, and solar panels). Through financing, they promote energy efficient homes in hopes to reduce greenhouse gas emissions.",
                 "\n\nThe NYS Electronic Equipment Recycling and Reuse Act: ",
                 "An act in New York State that requires manufacturers to provide free, convenient recycling of e-waste to its in-state consumers.");
     }

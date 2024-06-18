@@ -9,7 +9,7 @@ public class InteractiveUtility {
     public static void createQuestions(){
         Question question1 = new Question("1. Technologies are used in waste management. It helps optimize waste management... ",
                 "A. By increasing non-renewable resource usage",
-                "B. By automating sorting and waste separation systems",
+                "B. By automating waste sorting and separation systems",
                 "C. By encouraging e-waste production",
                 "D. By clearing land for waste processing factories",
                 "B. By automating sorting and waste separation systems");
