@@ -137,7 +137,7 @@ public class InteractivePanel extends JPanel implements ActionListener {
             }
         }
         // Add section score to string for display
-        displayString += "Section Score: " + numCorrect + "/ 4";
+        displayString += "Section Score: " + numCorrect + "/4";
 
         pane.setFont(new Font("Arial", Font.PLAIN, 28));
         pane.setBackground(new Color(238,238,238));
