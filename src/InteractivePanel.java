@@ -1,5 +1,9 @@
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.Style;
+import javax.swing.text.StyleConstants;
+import javax.swing.text.StyledDocument;
 import java.awt.*;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -121,7 +125,7 @@ public class InteractivePanel extends JPanel implements ActionListener {
         for(int x = start; x <= end; x++){
             question = questionPanelList.get(x).getQuestionObj();
             // Add question and user selected answer to string for display
-            displayString += "Question: " + question.getQuestion() +"\nYour Answer: " + questionPanelList.get(x).getSelectedAnswer() + "\n";
+            displayString += "Question: " + question.getQuestion()+"\nYour Answer: " + questionPanelList.get(x).getSelectedAnswer() + "\n";
 
             // Add question result to string for display
             if(questionPanelList.get(x).isAnswerCorrect()){

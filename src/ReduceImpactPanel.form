@@ -63,6 +63,7 @@
                       <background color="-1579033"/>
                       <editable value="false"/>
                       <font size="28"/>
+                      <text value=""/>
                     </properties>
                   </component>
                 </children>

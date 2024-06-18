@@ -119,8 +119,8 @@ public class ImpactsPanel extends JPanel{
 
         // Set main text information
         hPositiveImpactText.setText("Technological advancements have made huge impacts on healthcare. \n" +
-                "\nPatients can now meet with healthcare professionals and access test results remotely. As such, patients do not always need to travel to doctor’s offices and clinics, minimizing the amount of greenhouse gases produced.\n" +
-                "\nTechnology is used in healthcare facilities to produce images of the body, make diagnoses, and monitor vital signs, improving healthcare accuracy. Technology has helped develop vaccines, cure diseases, and potentially, in the future, cure genetic disorders. \n" +
+                "\nPatients can now meet and communicate with healthcare professionals and access test results remotely. As such, patients do not always need to travel to doctor’s offices and clinics, minimizing the amount of greenhouse gases produced.\n" +
+                "\nTechnology is used in healthcare facilities to produce images of the body, make diagnoses, assist in treatment, and monitor vital signs, improving healthcare accuracy. Technology has helped develop vaccines, cure diseases, and potentially, in the future, cure genetic disorders. \n" +
                 "\nEven health applications can track illnesses, diets, exercises, mental health, and menstrual cycles, helping individuals manage their health needs.");
         hNegativeImpactText.setText("Technology is widely used today by individuals of many different ages. Overuse of technology correlated to a variety of health issues that include and relate to musculoskeletal problems, digital eye strain, disrupted sleep, hearing issues, and physical inactivity.\n" +
                 "\nThe variety of apps that electronic devices provide, like social media and video game apps, were made to be addicting, causing unnecessary reliance on electronics.\n" +

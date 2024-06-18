@@ -98,6 +98,7 @@
                           </grid>
                         </constraints>
                         <properties>
+                          <background color="-1381654"/>
                           <editable value="false"/>
                           <font size="24"/>
                         </properties>
@@ -117,6 +118,7 @@
                           </grid>
                         </constraints>
                         <properties>
+                          <background color="-1381654"/>
                           <editable value="false"/>
                           <font size="24"/>
                         </properties>
@@ -211,6 +213,7 @@
                           </grid>
                         </constraints>
                         <properties>
+                          <background color="-1381654"/>
                           <editable value="false"/>
                           <font size="24"/>
                         </properties>
@@ -230,6 +233,7 @@
                           </grid>
                         </constraints>
                         <properties>
+                          <background color="-1381654"/>
                           <editable value="false"/>
                           <font size="24"/>
                         </properties>
