@@ -43,8 +43,8 @@ public class ReduceImpactPanel extends JPanel {
                 "\t- Reduce the screen’s glare to avoid eye strain\n" +
                 "\t- Set screen time limits to avoid spending too much time on electronic devices\n" +
                 "\t- Apply ergonomics to prevent musculoskeletal issues\n" +
-                "\t\t- correct posture issues\n" +
-                "\t\t- adjust the screen to eye level\n" +
+                "\t\t- Correct posture issues\n" +
+                "\t\t- Adjust the screen to eye level\n" +
                 "\t- Dim screens in the evenings\n" +
                 "\t- Stop using devices an hour before bedtime to minimize sleep disruption from blue light\n");
     }
