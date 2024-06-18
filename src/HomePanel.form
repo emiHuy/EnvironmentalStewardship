@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="HomePanel">
+  <grid id="27dc6" binding="aHomePanel" layout-manager="GridLayoutManager" row-count="6" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1888" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-2957091"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="e5237" class="javax.swing.JButton" binding="reduceImageButton">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-2957091"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="a384c" class="javax.swing.JButton" binding="programsAndInitiativesButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="485" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-2957091"/>
+          <font size="36"/>
+          <foreground color="-14474461"/>
+          <text value="Programs and Initiatives"/>
+        </properties>
+      </component>
+      <component id="94230" class="javax.swing.JButton" binding="impactOfTechnologyButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="490" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-2957091"/>
+          <font size="36"/>
+          <foreground color="-14474461"/>
+          <text value="Impact of Technology"/>
+        </properties>
+      </component>
+      <component id="7bcea" class="javax.swing.JButton" binding="programImageButton">
+        <constraints>
+          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-2957091"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="d5c9c" class="javax.swing.JButton" binding="impactImageButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-2957091"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <vspacer id="e661">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <hspacer id="ec0a1">
+        <constraints>
+          <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="700a7">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="19" height="11"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="9a803">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="88b11">
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="aa666">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="eec77">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="a17e3" class="javax.swing.JButton" binding="interactiveButton">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-6703684"/>
+          <font size="36"/>
+          <foreground color="-14474461"/>
+          <text value="Interactive"/>
+        </properties>
+      </component>
+      <component id="f36f2" class="javax.swing.JButton" binding="reducingNegativeImpactsButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="468" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-2957091"/>
+          <font size="36"/>
+          <foreground color="-14474461"/>
+          <text value="Reducing Negative Impacts"/>
+        </properties>
+      </component>
+      <component id="d4fd8" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="48"/>
+          <foreground color="-14474461"/>
+          <text value="Environmental Stewardship - Technology"/>
+        </properties>
+      </component>
+      <vspacer id="f348f">
+        <constraints>
+          <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>

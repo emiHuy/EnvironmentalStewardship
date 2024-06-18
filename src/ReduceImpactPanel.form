@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ReduceImpactPanel">
+  <grid id="27dc6" binding="parentPanel" layout-manager="CardLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="1443" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-2957091"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="afcc9" binding="generalPanel" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <card name="Card1"/>
+        </constraints>
+        <properties>
+          <background color="-2957091"/>
+          <foreground color="-2957091"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="87189" class="javax.swing.JLabel" binding="header">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="48"/>
+              <text value="Reducing Negative Impacts of Technology"/>
+            </properties>
+          </component>
+          <tabbedpane id="2dd2f" binding="tabbedPane">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="1500" height="200"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-2763307"/>
+              <font size="32"/>
+              <tabPlacement value="1"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="aac01" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Reducing Environmental Impacts"/>
+                </constraints>
+                <properties>
+                  <background color="-1579033"/>
+                  <font size="44"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="aafc0" class="javax.swing.JTextPane" binding="environmentText">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="1300" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-1579033"/>
+                      <editable value="false"/>
+                      <font size="28"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="c17dd" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Reducing Health Impacts"/>
+                </constraints>
+                <properties>
+                  <background color="-1579033"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="5992f" class="javax.swing.JTextPane" binding="healthText">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="1300" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-1579033"/>
+                      <editable value="false"/>
+                      <font size="28"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <hspacer id="99371">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <vspacer id="9bd7a">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </vspacer>
+                  <vspacer id="ca676">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </vspacer>
+                </children>
+              </grid>
+            </children>
+          </tabbedpane>
+          <vspacer id="b2a50">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="22f78">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <hspacer id="ef222">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="29c5b">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
