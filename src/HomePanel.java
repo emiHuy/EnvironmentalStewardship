@@ -25,11 +25,15 @@ public class HomePanel extends JPanel implements ActionListener {
         ImageIcon image = new ImageIcon(filename);
         button.setIcon(image);
         button.setBorder(new EmptyBorder(0,0,0,0));
+        button.setFocusPainted(false);
+        button.setContentAreaFilled(false);
         button.addActionListener(this);
     }
 
     private void createButton(JButton button){
         button.setBorder(new EmptyBorder(20,0,0,0));
+        button.addActionListener(this);
+        button.setContentAreaFilled(false);
         button.addActionListener(this);
     }
 
