@@ -4,4 +4,4 @@ This program aims to inform users about the impacts of technology and environmen
 
 **Contributors:** Emily (me) <br />
 **Created on:** IntelliJ (Java Swing) <br />
-**Year created:** 2022
+**Year created:** 2024
